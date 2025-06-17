@@ -3,32 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vídeos de Ciência</title>
+  <title>Murilo Junior Diniz - Desenvolvedor e Designer</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <h1>Explorando a Ciência</h1>
-
-  <div class="video-grid">
-    <div class="video"><iframe src="https://www.youtube.com/embed/Cojmooa4o1k" allowfullscreen></iframe></div>
-    <div class="video"><iframe src="https://www.youtube.com/embed/uDThnFDNIw9xEpkH" allowfullscreen></iframe></div>
-    <div class="video"><iframe src="https://www.youtube.com/embed/W9AO7g2Cgdc" allowfullscreen></iframe></div>
+  <div class="top-bar">
+    <div>Murilo Junior Diniz</div>
+    <div>Desenvolvedor & Designer</div>
   </div>
 
-  <h2>Mais vídeos</h2>
-  <div class="carousel-container">
-    <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
-    <div class="carousel" id="carousel">
-      <div class="carousel-item"><iframe src="https://www.youtube.com/embed/RklXx9dSC6s" allowfullscreen></iframe></div>
-      <div class="carousel-item"><iframe src="https://www.youtube.com/embed/i1vliYwKy7E" allowfullscreen></iframe></div>
-      <div class="carousel-item"><iframe src="https://www.youtube.com/embed/lNbfmoSx1Sc" allowfullscreen></iframe></div>
-      <div class="carousel-item"><iframe src="https://www.youtube.com/embed/BYpThzHDUlM" allowfullscreen></iframe></div>
-      <div class="carousel-item"><iframe src="https://www.youtube.com/embed/l4qE_9b_wPA" allowfullscreen></iframe></div>
-      <div class="carousel-item"><iframe src="https://www.youtube.com/embed/GcT9S9RDMoM" allowfullscreen></iframe></div>
-      <div class="carousel-item"><iframe src="https://www.youtube.com/embed/0EyvHRSukYk" allowfullscreen></iframe></div>
+  <div class="profile-header">
+    <img src="profile.jpg" alt="Foto de Murilo Junior Diniz" class="profile-pic">
+    <h1>Murilo Junior Diniz</h1>
+    <p>Brasileiro - 33 anos</p>
+    <p>Desenvolvedor Web | Designer | Especialista em Métodos Ágeis</p>
+  </div>
+
+  <section class="about-section">
+    <h2>Sobre Mim</h2>
+    <p>Formado em Análise e Desenvolvimento de Sistemas pela UNIFRAN e especialista em Engenharia de Software com Métodos Ágeis pela UNICSUL.</p>
+    <p>Combinando habilidades técnicas e criativas, ofereço soluções completas que vão desde o design até o desenvolvimento de aplicações web modernas e responsivas.</p>
+    <p>Acredito na abordagem ágil para entregar valor contínuo aos clientes, com foco na qualidade e na experiência do usuário.</p>
+  </section>
+
+  <section class="skills-section">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Desenvolvimento Web</h3>
+        <p>HTML5, CSS3, JavaScript, React, Node.js</p>
+      </div>
+      <div class="skill-card">
+        <h3>Design</h3>
+        <p>UI/UX Design, Adobe Creative Suite, Figma</p>
+      </div>
+      <div class="skill-card">
+        <h3>Metodologias Ágeis</h3>
+        <p>Scrum, Kanban, Gestão de Projetos</p>
+      </div>
     </div>
-    <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
-  </div>
+  </section>
+
+  <section>
+    <h2>Projetos Destacados</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="project1.jpg" alt="Projeto 1">
+        <h3>Sistema de Gestão</h3>
+        <p>Sistema completo desenvolvido com React e Node.js para gestão empresarial.</p>
+      </div>
+      <div class="project-card">
+        <img src="project2.jpg" alt="Projeto 2">
+        <h3>Portfólio Artístico</h3>
+        <p>Website responsivo para artista visual com galeria interativa.</p>
+      </div>
+      <div class="project-card">
+        <iframe src="https://www.youtube.com/embed/Cojmooa4o1k" allowfullscreen></iframe>
+        <h3>Projeto Educacional</h3>
+        <p>Plataforma de ensino online com recursos interativos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Demonstrações</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="scrollCarousel(-1)"><i class="fas fa-chevron-left"></i></button>
+      <div class="carousel" id="carousel">
+        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/RklXx9dSC6s" allowfullscreen></iframe></div>
+        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/i1vliYwKy7E" allowfullscreen></iframe></div>
+        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/lNbfmoSx1Sc" allowfullscreen></iframe></div>
+        <div class="carousel-item"><iframe src="https://www.youtube.com/embed/BYpThzHDUlM" allowfullscreen></iframe></div>
+      </div>
+      <button class="carousel-btn right" onclick="scrollCarousel(1)"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <h2>Contato</h2>
+    <p>Interessado em trabalhar juntos ou saber mais sobre meu trabalho?</p>
+    <div class="contact-links">
+      <a href="mailto:seuemail@example.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://linkedin.com/in/seuperfil" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/seuusuario" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </section>
 
   <script>
     function scrollCarousel(direction) {
@@ -37,8 +97,9 @@
       carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
     }
   </script>
+
+  <footer>
+    <p>Desenvolvido por Murilo Junior Diniz © 2025</p>
+  </footer>
 </body>
-<footer>
-  <p>Desenvolvido por MuriloJuniorDiniz © 2025</p>
-</footer>
 </html>
